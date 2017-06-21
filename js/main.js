@@ -8,7 +8,7 @@ var barChartData = {
                 'rgba(255, 206, 86, 1)',
                 'rgba(75, 192, 192, 1)',
             ],
-        data: [32, 19, 3, 5]
+        data: [0, 0, 0, 0]
     }, {
         label: 'Estado',
         backgroundColor: [
@@ -17,7 +17,7 @@ var barChartData = {
                 'rgba(255, 206, 86, 0.2)',
                 'rgba(75, 192, 192, 0.2)',
             ],
-        data: [501, 192, 31, 55]
+        data: [regionData.totalProfissionais, regionData.totalEfenfermeiros, regionData.totalTecnicos, regionData.totalAuxiliares]
     }]
 
 };
@@ -41,7 +41,7 @@ window.onload = function() {
                     stacked: true,
                 }],
                 yAxes: [{
-                    stacked: true
+                    stacked: false
                 }]
             }
         }

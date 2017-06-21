@@ -34,5 +34,10 @@ var svgClick = (function(){
     ptec.innerHTML  = (dataRegion.tecnicos / regionData.totalTecnicos * 100).toFixed(2) + '%';
     naux.innerHTML  = dataRegion.auxiliares;
     paux.innerHTML  = (dataRegion.auxiliares / regionData.totalAuxiliares * 100).toFixed(2) + '%';
+
+
+    barChartData.datasets[0].data = [dataRegion.profissionais, dataRegion.enfermeiros, dataRegion.tecnicos, dataRegion.auxiliares];
+
+    myBar.update();
   }
 })();
