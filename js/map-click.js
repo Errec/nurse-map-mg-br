@@ -16,14 +16,14 @@ var svgClick = (function(){
 
   function _showData(e) {
     if(e.target !== e.currentTarget) {
-      _render(e.target.dataset.region);
+      _render(e.target.dataset.name);
     }
     e.stopPropagation();
   }
 
   function _render(regionName) {
-    console.log(regionData.macroRegioes[regionName]);
-    var dataRegion  = regionData.macroRegioes[regionName];
+    console.log(regionData.microRegioes[regionName]);
+    var dataRegion  = regionData.microRegioes[regionName];
 
     title.innerHTML = regionName;
     nprof.innerHTML = dataRegion.profissionais;
