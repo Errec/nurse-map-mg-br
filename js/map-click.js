@@ -13,6 +13,7 @@ var svgHover = (function(){
   }
 
   function _render(region) {
-    console.log(region);
+    console.log(regionData.macroRegioes[region]);
+
   }
 })();
