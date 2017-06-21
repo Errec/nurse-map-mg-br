@@ -14,6 +14,7 @@ var svgClick = (function(){
   //  Bind mouse events
   map.addEventListener("click", _showData, false);
 
+
   function _showData(e) {
     if(e.target !== e.currentTarget) {
       _render(e.target.dataset.name);
@@ -22,7 +23,7 @@ var svgClick = (function(){
   }
 
   function _render(regionName) {
-    console.log(regionData.microRegioes[regionName]);
+    // console.log(regionData.microRegioes[regionName]);
     var dataRegion  = regionData.microRegioes[regionName];
 
     title.innerHTML = regionName;
