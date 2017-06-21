@@ -12,8 +12,32 @@ html(lang="en")
   body
     main.main
       section.map
+        div.map__legend
+          ul.map__legend-grid
+            li.map__legend--item
+              p.map__legend-text Profissionais<br>de Enfermagem
+            li.map__legend--item
+              div.map__legend-square#legend-1
+              p.map__legend-text 0-1000
+            li.map__legend--item
+              div.map__legend-square#legend-2
+              p.map__legend-text 1001-2000
+            li.map__legend--item
+              div.map__legend-square#legend-3
+              p.map__legend-text 2001-3000
+            li.map__legend--item
+              div.map__legend-square#legend-4
+              p.map__legend-text 3001-4000
+            li.map__legend--item
+              div.map__legend-square#legend-5
+              p.map__legend-text 4001-10000
+            li.map__legend--item
+              div.map__legend-square#legend-6
+              p.map__legend-text 10000<
         div.map__svg
           include templates/macroRegionMap.pug
+        div.map__subtitle
+          p.map__legend-text Mapa da distribuição dos profissonais de Enfermagem no estado de Minas Gerais
       section.data
         div.data__graph-wrapper
           div.data__graph-title
@@ -38,6 +62,5 @@ html(lang="en")
               td.data__table-data.data__table-data-values#td-aux-n 0
               td.data__table-data.data__table-data-values#td-aux-p 0%
 
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   script(src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js")
   script(src="js/bundle.min.js")

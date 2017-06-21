@@ -1,3 +1,8 @@
+.map
+  height: 100%
+  width: 60%
+  display: inline-block
+
 .bg-1
   fill: #ffff8c
 .bg-2
@@ -11,10 +16,47 @@
 .bg-6
   fill: #000000
 
-.map
-  height: 100%
-  width: 60%
+.map__legend
+  position: absolute
+  left: 12px
+  top: 8px
+  padding: 0 4px
+  border: 1px solid black
+    radius: 1px
+
+#legend-1
+  background-color: #ffff8c
+#legend-2
+  background-color: #ffe100
+#legend-3
+  background-color: #ff8c00
+#legend-4
+  background-color: #fa0000
+#legend-5
+  background-color: #820000
+#legend-6
+  background-color: #000000
+
+li, ul, p
+  padding: 0
+  margin: 0
+
+.map__legend--item
+  margin: 12px 4px
+  list-style: none
+
+.map__legend-square
+  outline: solid 1px black
+  vertical-align: middle
+  width: 20px
+  height: 20px
   display: inline-block
+
+.map__legend-text
+  display: inline-block
+  margin-left: 4px
+  font-weight: bold
+  font-size: 0.9rem
 
 .map__svg
   width: 100%
@@ -30,3 +72,6 @@
   stroke: darkgrey
   stroke-width: 500px
   paint-order: stroke
+
+.map__subtitle
+  text-align: center
