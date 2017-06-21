@@ -1,4 +1,9 @@
 @import 'base/normalize.scss'
 @import 'base/reset.scss'
 
-@import 'modules/macro.sass'
+html, body
+  height: 100%
+  width: 100%
+
+@import 'modules/map.sass'
+@import 'modules/data.sass'
