@@ -24,7 +24,7 @@ var svgClick = (function(){
 
   function _render(regionName) {
     // console.log(regionData.microRegioes[regionName]);
-    var dataRegion  = regionData.microRegioes[regionName];
+    var dataRegion  = regionData.microRegioes[regionName] || regionData.macroRegioes[regionName];
 
     title.innerHTML = regionName;
     nprof.innerHTML = dataRegion.profissionais;
