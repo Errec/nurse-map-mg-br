@@ -4,8 +4,16 @@
   min-width: 600px
   display: inline-block
 
+#microrreg, #macrorreg
+  transition: opacity 0.3s ease-in-out
+
+.map--hide
+  opacity: 0
+  pointer-events: none
+
 .map__btn-wrapper
   text-align: center
+
 .map__btn
   cursor: pointer
   background-color: #555555
@@ -44,17 +52,17 @@
   border: 1px solid black
     radius: 1px
 
-#legend-1
+#legend-square-1
   background-color: #ffff8c
-#legend-2
+#legend-square-2
   background-color: #ffe100
-#legend-3
+#legend-square-3
   background-color: #ff8c00
-#legend-4
+#legend-square-4
   background-color: #fa0000
-#legend-5
+#legend-square-5
   background-color: #820000
-#legend-6
+#legend-square-6
   background-color: #000000
 
 li, ul, p
@@ -84,7 +92,6 @@ li, ul, p
   height: 100%
 
 .state-region
-  display: none
   cursor: pointer
   transition: all 0.2s ease-in-out
   stroke: darkgrey
@@ -92,7 +99,6 @@ li, ul, p
   paint-order: stroke
 
 .macro-region
-  display: block
   cursor: pointer
   transition: all 0.2s ease-in-out
   stroke: darkgrey
@@ -101,7 +107,6 @@ li, ul, p
     fill: darkgreen
 
 .micro-region
-  display: none
   cursor: pointer
   transition: all 0.2s ease-in-out
   stroke: darkgrey
